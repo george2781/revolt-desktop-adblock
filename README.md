@@ -1,8 +1,8 @@
-# Revolt Desktop
+# Revolt Desktop with adblocker
 
 ## Description
 
-This is a desktop application for Revolt built on Electron.
+This is a desktop application for Revolt built on Electron. I am updating this repository with the stable code of revolt's desktop application alongside the addition of an adblocker. In it's current state it is unfinished.
 
 ## Stack
 
