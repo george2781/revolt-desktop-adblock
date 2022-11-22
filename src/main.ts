@@ -9,7 +9,9 @@ import {
     Tray,
     Menu,
     MenuItem,
+    session,
 } from "electron";
+import { ElectronBlocker } from '@cliqz/adblocker-electron';
 import { execFile } from "child_process";
 import windowStateKeeper from "electron-window-state";
 import { RelaunchOptions } from "electron/main";
@@ -89,7 +91,10 @@ function createWindow() {
 
     mainWindowState.manage(mainWindow);
     mainWindow.loadURL(getBuildURL());
-
+	console.info('Loading adblocker...');
+	ElectronBlocker.fromPrebuiltAdsAndTracking(require('cross-fetch')).then((blocker) => {
+		blocker.enableBlockingInSession(session.defaultSession);
+		console.info('Adblocker loaded.');
     /**
      * Window events
      */
