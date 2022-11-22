@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a desktop application for Revolt built on Electron. I am updating this repository with the stable code of revolt's desktop application alongside the addition of an adblocker. In it's current state it is unfinished.
+This is a desktop application for Revolt built on Electron. I am updating this repository with the stable code of revolt's desktop application alongside the addition of an adblocker. We are currently on version 1.0.6.
 
 ## Stack
 
